@@ -34,5 +34,15 @@ function gameRound(playerChoice, computerChoice){
     else if (playerChoice === paper && computerChoice === scissors){
         return("You lost!");
     }
-
+    else if (playerChoice == scissors && computerChoice == paper){
+        return("You won!")
+    }
+    else if (playerChoice == scissors && computerChoice == rock){
+        return("You lost!");
+    }
 }
+console.log(computerNumber);
+computerSelector(computerNumber);
+console.log(computerChoice);
+console.log(playerChoice);
+gameRound();
